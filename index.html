@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Aplikasi Pengelola Keuangan Pribadi</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Aplikasi Pengelola Keuangan Pribadi</h1>
+      <label for="transactionType">Jenis Transaksi :</label>
+      <select id="transactionType">
+        <option value="income">Pendapatan</option>
+        <option value="expense">Pengeluaran</option>
+      </select>
+      <label for="amount">Jumlah :</label>
+      <input type="number" id="amount" placeholder="Jumlah" required/>
+      <label for="date">Tanggal :</label>
+      <input type="date" id="date" required/>
+      <button id="addTransactionButton">Tambah Transaksi</button>
+      <h2>Riwayat Transaksi :</h2>
+      <ul id="transactionList"></ul>
+      <p id="balance">Saldo : 0</p>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
